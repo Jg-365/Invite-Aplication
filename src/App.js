@@ -155,6 +155,9 @@ function BirthdayInvitation() {
         {step === 1 && rsvp === "não" && (
           <div className="response">
             <h3>Os de verdade, eu sei quem são...😪</h3>
+            <button onClick={handleSubmit} className="submitButton">
+              Não vou.
+            </button>
           </div>
         )}
       </div>
