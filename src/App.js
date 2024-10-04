@@ -27,7 +27,7 @@ function BirthdayInvitation() {
       try {
         const inviteId = window.location.pathname.split("/").pop();
         const response = await axios.get(
-          `http://localhost:5000/invite/${inviteId}`
+          `https://pagode-8a84169bad42.herokuapp.com/invite/${inviteId}`
         );
         setGuest(response.data);
       } catch (error) {
@@ -56,10 +56,13 @@ function BirthdayInvitation() {
   const handleSubmit = async () => {
     try {
       const inviteId = window.location.pathname.split("/").pop();
-      await axios.post(`http://localhost:5000/invite/${inviteId}/rsvp`, {
-        rsvp,
-        drink,
-      });
+      await axios.post(
+        `https://pagode-8a84169bad42.herokuapp.com/invite/${inviteId}/rsvp`,
+        {
+          rsvp,
+          drink,
+        }
+      );
       alert("Dados enviados com sucesso!");
       setStep(2); // Passo 2: Após enviar preferências, exibe somente a arte e o título
     } catch (error) {
