@@ -57,12 +57,10 @@ function BirthdayInvitation() {
     try {
       const inviteId = window.location.pathname.split("/").pop();
       await axios.post(
-        `https://pagode-8a84169bad42.herokuapp.com/invite/${inviteId}/rsvp`,
-        {
-          rsvp,
-          drink,
-        }
+        `https://pagode-8a84169bad42.herokuapp.com/invite/${inviteId}/drinks`,
+        { rsvp, drink }
       );
+
       alert("Dados enviados com sucesso!");
       setStep(2); // Passo 2: Após enviar preferências, exibe somente a arte e o título
     } catch (error) {
