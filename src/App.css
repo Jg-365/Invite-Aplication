@@ -1,38 +1,111 @@
-.App {
+body {
+  background-color: rgb(0, 0, 30);
+  overflow: hidden;
+  height: 100vh; /* Garante que o body ocupe toda a altura da viewport */
+  margin: 0; /* Remove margens padrão */
+}
+
+.pageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Garante que o container ocupe toda a altura da tela */
+  width: 100vw; /* Garante que o container ocupe toda a largura da tela */
+}
+
+.container {
   text-align: center;
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  max-height: 700px;
+  padding: 20px;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container h1 {
+  margin-bottom: 20px; /* Adiciona um espaçamento maior abaixo do título */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container p {
+  max-width: 80%;
+  margin-bottom: 20px; /* Espaçamento entre os parágrafos e outros elementos */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.artContainer {
+  margin-bottom: 20px;
+  width: 80%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+  object-fit: contain;
+  background-size: 100%; /* Ajuste para cobrir o contêiner com a imagem */
+  background-image: url("https://i.pinimg.com/564x/67/87/ee/6787eefda9a000f36f5d846a64edc18f.jpg");
+  background-repeat: repeat;
+}
+
+.button {
+  padding: 10px 20px;
+  margin: 10px 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: 0.1s ease-in-out;
+}
+
+.button:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+.buttons {
+  margin: 20px 0;
+}
+
+.response {
+  margin: 20px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.poll {
+  margin: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: flex-start; /* Garante que os checkboxes fiquem alinhados à esquerda */
+  width: 100%; /* Faz com que a div ocupe toda a largura disponível */
+  padding-left: 50%; /* Adiciona um espaçamento à esquerda */
+}
+
+.poll label {
+  margin: 2%;
+  font-size: 1rem;
+}
+
+.submitButton {
+  padding: 10px 20px;
+  margin: 10px 5px;
+  cursor: pointer;
+  background-color: #007bff;
   color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: 0.1s ease-in-out;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.submitButton:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
 }
