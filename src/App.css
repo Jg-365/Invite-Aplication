@@ -47,9 +47,9 @@ body {
   overflow: hidden;
   border-radius: 20px;
   object-fit: contain;
-  background-size: 100%; /* Ajuste para cobrir o contêiner com a imagem */
+  background-size: cover; /* Ajuste para cobrir o contêiner com a imagem */
   background-image: url("https://i.pinimg.com/564x/67/87/ee/6787eefda9a000f36f5d846a64edc18f.jpg");
-  background-repeat: repeat;
+  background-repeat: no-repeat;
 }
 
 .button {
@@ -85,7 +85,7 @@ body {
   flex-direction: column;
   align-items: flex-start; /* Garante que os checkboxes fiquem alinhados à esquerda */
   width: 100%; /* Faz com que a div ocupe toda a largura disponível */
-  padding-left: 50%; /* Adiciona um espaçamento à esquerda */
+  padding-left: 10%; /* Reduzido o padding para melhorar a responsividade */
 }
 
 .poll label {
@@ -108,4 +108,66 @@ body {
 .submitButton:hover {
   background-color: #0056b3;
   transform: scale(1.1);
+}
+
+/* Media Queries para telas menores */
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+    padding: 15px;
+    border-radius: 30px;
+  }
+
+  .container h1 {
+    font-size: 1.8rem;
+  }
+
+  .container p {
+    max-width: 100%;
+    font-size: 1rem;
+  }
+
+  .artContainer {
+    height: 150px;
+  }
+
+  .poll {
+    padding-left: 5%; /* Ajusta para melhor alinhamento em telas menores */
+  }
+
+  .button,
+  .submitButton {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    max-width: 95%;
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  .container h1 {
+    font-size: 1.5rem;
+  }
+
+  .container p {
+    font-size: 0.9rem;
+  }
+
+  .artContainer {
+    height: 120px;
+  }
+
+  .poll {
+    padding-left: 2%; /* Menor espaçamento para telas muito pequenas */
+  }
+
+  .button,
+  .submitButton {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
 }
