@@ -135,6 +135,12 @@ body {
     padding-left: 5%; /* Ajusta para melhor alinhamento em telas menores */
   }
 
+  .poll label {
+    margin: 5%;
+    font-size: 1.2rem; /* Aumenta o tamanho da fonte para facilitar a interação no mobile */
+    cursor: pointer; /* Garante que o cursor mude quando sobre o label */
+  }
+
   .button,
   .submitButton {
     padding: 8px 16px;
@@ -163,6 +169,12 @@ body {
 
   .poll {
     padding-left: 2%; /* Menor espaçamento para telas muito pequenas */
+  }
+
+  .poll label {
+    margin: 5%;
+    font-size: 1.2rem; /* Aumenta o tamanho da fonte para facilitar a interação no mobile */
+    cursor: pointer; /* Garante que o cursor mude quando sobre o label */
   }
 
   .button,
