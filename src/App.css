@@ -15,8 +15,8 @@ body {
 .container {
   text-align: center;
   font-family: Arial, sans-serif;
-  max-width: 80%;
-  max-height: 80%;
+  max-width: 600px;
+  max-height: 90%;
   padding: 20px;
   border-radius: 50px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -126,31 +126,38 @@ body {
 /* Media Queries para telas menores */
 @media (max-width: 768px) {
   .container {
-    max-width: 90%;
-    padding: 15px;
+    max-width: 600px;
+    max-height: 600px;
+    width: 80%;
     border-radius: 30px;
+    padding: 5%;
   }
 
   .container h1 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 
+  .container h2 {
+    font-size: 1.2rem;
+    margin-bottom: 5%;
+  }
   .container p {
     max-width: 100%;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .artContainer {
-    height: 150px;
+    height: 30%;
+    min-height: 100px;
   }
 
   .poll {
-    padding-left: 5%; /* Ajusta para melhor alinhamento em telas menores */
+    margin: 0;
   }
 
   .poll label {
-    margin: 5%;
-    font-size: 1.2rem; /* Aumenta o tamanho da fonte para facilitar a interação no mobile */
+    margin: 5px;
+    font-size: 0.8rem; /* Aumenta o tamanho da fonte para facilitar a interação no mobile */
     cursor: pointer; /* Garante que o cursor mude quando sobre o label */
   }
 
@@ -158,6 +165,7 @@ body {
   .submitButton {
     padding: 8px 16px;
     font-size: 14px;
+    margin: 0 5px;
   }
 }
 

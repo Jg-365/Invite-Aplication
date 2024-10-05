@@ -90,7 +90,8 @@ function BirthdayInvitation() {
             </p>
             <p style={{ fontWeight: "bold" }}>
               Data: 19 de Outubro <br />
-              Local: Casa de Eventos ...
+              Local: Sítio Canto dos Passarinhos <br />
+              Horário: A partir das 16h
             </p>
             <h2>Você vai comparecer?</h2>
             <div>
