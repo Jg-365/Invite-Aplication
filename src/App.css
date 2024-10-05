@@ -46,9 +46,9 @@ body {
   overflow: hidden;
   border-radius: 20px;
   object-fit: contain;
-  background-size: cover; /* Ajuste para cobrir o contêiner com a imagem */
+  background-size: 250px 250px; /* Ajuste para cobrir o contêiner com a imagem */
   background-image: url("https://i.pinimg.com/564x/67/87/ee/6787eefda9a000f36f5d846a64edc18f.jpg");
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 }
 
 .button {
