@@ -162,7 +162,7 @@ function BirthdayInvitation() {
         )}
 
         {/* Exibir mensagem final após submissão no passo 3 */}
-        {step === 3 && <h2>Obrigado! Nos vemos na lá! 🎉</h2>}
+        {step === 3 && <h2>Obrigado! Nos vemos lá! 🎉</h2>}
 
         {/* Exibir resposta "não" diretamente no passo 2 */}
         {step === 2 && (
