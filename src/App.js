@@ -84,14 +84,14 @@ function BirthdayInvitation() {
               {saudacao}, {guest.name}!
             </h2>
             <p>
-              Que tal uma tardezinha de pagode de mexer com o coração e com o
+              Que tal um churrasquinho com pagode de mexer com o coração e com o
               fígado? Vem aproveitar o meu aniversário de 21 comigo pô, vai ser
               massa!
             </p>
             <p style={{ fontWeight: "bold" }}>
-              Data: 19 de Outubro <br />
-              Local: Sítio Canto dos Passarinhos <br />
-              Horário: A partir das 16h
+              Data: Sábado, 19 de Outubro <br />
+              Local: Deck do Edifício Azure <br />
+              Horário: A partir das 10h
             </p>
             <h2>Você vai comparecer?</h2>
             <div>
@@ -153,14 +153,6 @@ function BirthdayInvitation() {
                 />
                 Vodka
               </label>
-              <label>
-                <input
-                  type="checkbox"
-                  value="drinks"
-                  onChange={handleDrinkChange}
-                />
-                Drinks
-              </label>
             </div>
 
             <button onClick={handleSubmit} className="submitButton">
@@ -170,7 +162,7 @@ function BirthdayInvitation() {
         )}
 
         {/* Exibir mensagem final após submissão no passo 3 */}
-        {step === 3 && <h2>Obrigado! Nos vemos na festa! 🎉</h2>}
+        {step === 3 && <h2>Obrigado! Nos vemos na lá! 🎉</h2>}
 
         {/* Exibir resposta "não" diretamente no passo 2 */}
         {step === 2 && (
